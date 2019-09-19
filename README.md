@@ -1,9 +1,9 @@
 # BACKEND SKILLS ASSESSMENT PROJECT
-For this task you will be creating a Java application that can be run from the command line.  Thisapplication will take various input parameters and store data about transactions.  The application shouldprocess the parameters and then exit.
+For this task you will be creating a Java application that can be run from the command line. This application will take various input parameters and store data about transactions. The application shouldprocess the parameters and then exit.
 
-The application should store data on the file system under the folder where the application is.  Themethods on the interface for the code that is in charge of storing the data should be written such thatthe code calling the interface should not  have to be changed if you later changed the data storageimplementation so that  data is stored in a database.
+The application can store data on the file system under the folder where the application is or where you prefer. The methods on the interface for the code that is in charge of storing the data should be written such that the code calling the interface should not have to be changed if you later changed the data storageimplementation so that data is stored in a database.
 
-Please be prepared to explain what kind of database you would use if you were to store the data in adatabase in the future.  Be prepared to describe the tables and columns you would use (if you were tochoose a relational database), or the collections you would use (if you were to choose a NoSQLdatabase).
+Please be prepared to explain what kind of database you would use if you were to store the data in adatabase in the future.  Be prepared to describe the tables and columns you would use (if you were to choose a relational database), or the collections you would use (if you were to choose a NoSQLdatabase).
 
 Your command line should be able to handle the following command line inputs.
 
@@ -21,13 +21,13 @@ This command should print out a version of the transaction added with a unique i
 
 This command should return the transaction specified in the transaction_id. 
 
-If the user_id is not the user_idthat corresponds with the user_id for the specified transaction,  you should print outTransaction not found If the transaction does exists, you should print out the information for the transaction like this:
+If the user_id is not the user_id that corresponds with the user_id for the specified transaction,  you should print outTransaction not found If the transaction does exists, you should print out the information for the transaction like this:
 { “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, “amount”: 1.23, “description”: “Joes Tacos”,“date”:”2018-12-30”, “user_id”: 345 }
 
 ## LIST TRANSACTIONS
 ./application <user_id> list
 
-This command should print  all the transactions associated with the user specified by user_id. Thetransactions should be in chronological order. 
+This command should print  all the transactions associated with the user specified by user_id. The transactions should be in chronological order.
 
 If the user_id does not exist, then the response should returnan empty list. You should print the items in the following format:
 
