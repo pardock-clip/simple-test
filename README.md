@@ -118,7 +118,7 @@ user_id -> 345
 ## FINAL CONSIDERATIONS
 Please write this application in Java. You are free to implement this however you’d like with whatever resources or 3rd party code you’d want.
 
-**Deadline**: We expect you to get back to us with the solution in 7 days. But don't rush, if you need more time please ask us whenever you need.
+**Deadline**: We expect you to get back to us with the solution in 7 days. It won't be better if you delivery before, so if you finish early, improve your code. Finally, don't rush, if you need more time please ask us whenever you need.
 
 Create a private project in GitHub and share with us your code.
 
