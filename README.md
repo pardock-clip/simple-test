@@ -96,7 +96,9 @@ user_id -> 123
 sum -> 234.76
 
 
-## RANDMON SINGLE TRANSACTION
+## BONUS - RANDMON SINGLE TRANSACTION
+This is not required, it is just a bonus, if you have time go ahead :)
+
 Doesn't receive params.
 
 This command should return one transaction in a randmon way. Don't use Math.random().
