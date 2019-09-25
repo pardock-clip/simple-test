@@ -122,4 +122,6 @@ Please write this application in Java. You are free to implement this however yo
 
 Create a private project in GitHub and share with us your code.
 
+**The repo should have your name, for example, _cesar-alcancio-sample-java-test_, it will help us to identify your test.**
+
 Feel free to ask questions at any time (cesar.alcancio@payclip.com).
