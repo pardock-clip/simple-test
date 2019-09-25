@@ -13,22 +13,33 @@ Please be prepared to explain what kind of database you would use if you were to
 The API should have the following features:
 
 ## ADD TRANSACTION
-Receives <user_id> add <transaction_json> params.
+Receives <user_id> add <transaction_data> params.
 
-This feature should add a transaction to the user specified in <user_id> using the information specified in <transaction_json>.  The transaction data should have the following data:
+This feature should add a transaction to the user specified in <user_id> using the information specified in <transaction_data>.  The transaction data should have the following data:
+
 
 amount -> 1.23
+
 description -> Joes Tacos
+
 date -> 2018-12-30
+
 user id -> 345
+
 
 This command should return a version of the transaction added with a unique id for the transaction like this:
 
+
 transaction_id -> 2299ce24-9eaf-417f-82d6-e57f93777dc4
+
 amount -> 1.23
+
 descrption -> Joes Tacos
+
 date -> 2018-12-30
+
 user_id -> 345
+
 
 ## SHOW TRANSACTION
 Receives <user_id> <transaction_id> params.
@@ -39,11 +50,17 @@ If the user_id is not the user_id that corresponds with the user_id for the spec
 
 If the transaction does exists, you should print out the information for the transaction like this:
 
+
 transaction_id -> 2299ce24-9eaf-417f-82d6-e57f93777dc4
+
 amount -> 1.23
+
 descrption -> Joes Tacos
+
 date -> 2018-12-30
+
 user_id -> 345
+
 
 ## LIST TRANSACTIONS
 Receives <user_id> param.
@@ -52,12 +69,19 @@ This feature should print all the transactions associated with the user specifie
 
 If the user_id does not exist, then the response should return an empty list. You should print the items with the following data:
 
+
 List of ->
+
   transaction_id -> 2299ce24-9eaf-417f-82d6-e57f93777dc4
+  
   amount -> 1.23
+  
   descrption -> Joes Tacos
+  
   date -> 2018-12-30
+  
   user_id -> 345
+  
 
 ## SUM TRANSACTIONS
 Receives <user_id> param.
@@ -66,19 +90,28 @@ This command should sum all the transactions associated with the user specified 
 
 It should printout the sum with the following data:
 
+
 user_id -> 123
+
 sum -> 234.76
+
 
 ## RANDMON SINGLE TRANSACTION
 Doesn't receive params.
 
 This command should return one transaction in a randmon way. Don't use Math.random().
 
+
 transaction_id -> 2299ce24-9eaf-417f-82d6-e57f93777dc4
+
 amount -> 1.23
+
 descrption -> Joes Tacos
+
 date -> 2018-12-30
+
 user_id -> 345
+
 
 ## FINAL CONSIDERATIONS
 Please write this application in Java. You are free to implement this however you’d like with whatever resources or 3rd party code you’d want.
