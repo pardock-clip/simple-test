@@ -6,7 +6,7 @@ For this task you will be creating a **Java application** that will expose an **
 
 The application have to store data on the file system under the folder where the application is. So there is no need to use a database but if you feel that using a database can help your exercise, feel free to do so. We only ask you to not delegate any logic to the database like sum and others. We want to know your code.
 
-The methods on the interface for the code that is in charge of storing the data should be written such that the code calling the interface should not have to be changed if you later changed the data storageimplementation so that data is stored in a database.
+The methods on the interface for the code that is in charge of storing the data should be written such that the code calling the interface should not have to be changed if you later changed the data storage implementation so that data is stored in a database.
 
 Please be prepared to explain what kind of database you would use if you were to store the data in a database in the future.  Be prepared to describe the tables and columns you would use (if you were to choose a relational database), or the collections you would use (if you were to choose a NoSQLdatabase).
 
