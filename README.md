@@ -2,7 +2,7 @@
 
 For this task you will be creating a **Java application** that will expose an **Web API**. This application will take various input parameters and store data about transactions.
 
-**It must be production quality according to your understanding of it: testing, readme.MD etc. We run on Unix environment, if there's no instruction how to run the code or/and it doesn't compile, it will NOT QUALIFY **
+**It must be production quality according to your understanding of it: testing, readme.MD etc. We run on Unix environment, if there's no instruction how to run the code or/and it doesn't compile, it will NOT QUALIFY**
 
 The application have to store data on the file system under the folder where the application is. So there is no need to use a database but if you feel that using a database can help your exercise, feel free to do so. We only ask you to not delegate any logic to the database like sum and others. We want to know your code.
 
