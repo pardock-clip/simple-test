@@ -109,7 +109,7 @@ quantity -> quantity of transactions inside the week
 
 amount -> sum amout of the period/week
 
-total_amount -> total amount before the week start date (all previous transactions before 2019-11-22)
+total_amount -> total amount before the week start date (all previous transactions before 2019-11-22, the current week is not included, as showed in the example below)
 
 
 Whole example (including changing the month)
