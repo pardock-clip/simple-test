@@ -2,13 +2,9 @@
 
 For this task you will be creating a **Java application** that will expose an **Web API**. This application will take various input parameters and store data about transactions.
 
-**It must be production quality according to your understanding of it - testing, README, etc.**
+**It must be production quality according to your understanding of it: testing, readme.MD etc. We run on Unix environment, if there's no instruction how to run the code or/and it doesn't compile, it will NOT QUALIFY **
 
 The application have to store data on the file system under the folder where the application is. So there is no need to use a database but if you feel that using a database can help your exercise, feel free to do so. We only ask you to not delegate any logic to the database like sum and others. We want to know your code.
-
-The methods on the interface for the code that is in charge of storing the data should be written such that the code calling the interface should not have to be changed if you later changed the data storage implementation so that data is stored in a database.
-
-Please be prepared to explain what kind of database you would use if you were to store the data in a database in the future.  Be prepared to describe the tables and columns you would use (if you were to choose a relational database), or the collections you would use (if you were to choose a NoSQLdatabase).
 
 The API should have the following features:
 
@@ -94,6 +90,44 @@ It should printout the sum with the following data:
 user_id -> 123
 
 sum -> 234.76
+
+## TRANSACTIONS REPORT SERVICE
+Receives <user_id> param.
+
+This command should return all transactions accumulated by week, where the week starts on Friday and finishes on Thursday.
+Also, if it is the first day of the month, it should start the next week (As the example below). The service should return only the *data*, it is not necessary to build the UI/PDF/HTML report.
+
+The service should return an array if these datas:
+
+user_id -> 123
+
+week start date -> 2019-11-22 on Friday
+
+week finish date -> 2019-11-28 on Thursday
+
+amount -> sum amout of the period/week
+
+total_amount -> total amount before the week start date (all previous transactions before 2019-11-22)
+
+
+Whole example (including changing the month)
+
+| Id | Week start | Week finish | Amount | Total Amount |
+| :---: | :---: | :---: | :---: | :---: |
+| 123 | 2019-11-08 | 2019-11-14 | 10.00 | 00.00 |
+| 123 | 2019-11-25 | 2019-11-21 | 20.00 | 10.00 |
+| 123 | 2019-11-22 | 2019-11-28 | 100.00 | 30.00 |
+| 123 | 2019-11-29 | 2019-11-30 | 50.00 | 130.00 |
+| 123 | 2019-12-01 | 2019-12-05 | 120.00 | 180.00 |
+| 123 | 2019-12-06 | 2019-12-12 | 100.00 | 300.00 |
+
+It always start on Friday and finishes on Thursday, except on the start/end of the Month. In the example the total sum of transactions is 400.00.
+
+If there's no one single day of transaction for the week, the report should hide the week.
+
+The user can have no transaction in one day of the week, we still need to show the week.
+
+Let some prepared data on the project so we can check everything is running fine.
 
 
 ## BONUS - RANDMON SINGLE TRANSACTION
