@@ -105,6 +105,8 @@ week start date -> 2019-11-22 on Friday
 
 week finish date -> 2019-11-28 on Thursday
 
+quantity -> quantity of transactions inside the week
+
 amount -> sum amout of the period/week
 
 total_amount -> total amount before the week start date (all previous transactions before 2019-11-22)
@@ -112,14 +114,14 @@ total_amount -> total amount before the week start date (all previous transactio
 
 Whole example (including changing the month)
 
-| Id | Week start | Week finish | Amount | Total Amount |
-| :---: | :---: | :---: | :---: | :---: |
-| 123 | 2019-11-08 | 2019-11-14 | 10.00 | 00.00 |
-| 123 | 2019-11-25 | 2019-11-21 | 20.00 | 10.00 |
-| 123 | 2019-11-22 | 2019-11-28 | 100.00 | 30.00 |
-| 123 | 2019-11-29 | 2019-11-30 | 50.00 | 130.00 |
-| 123 | 2019-12-01 | 2019-12-05 | 120.00 | 180.00 |
-| 123 | 2019-12-06 | 2019-12-12 | 100.00 | 300.00 |
+| Id | Week start | Week finish | Quantity | Amount | Total Amount |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 123 | 2019-11-08 Friday | 2019-11-14 Thursday | 2 | 10.00 | 00.00 |
+| 123 | 2019-11-25 Friday | 2019-11-21 Thursday | 1 | 20.00 | 10.00 |
+| 123 | 2019-11-22 Friday | 2019-11-28 Thursday | 4 | 100.00 | 30.00 |
+| 123 | 2019-11-29 Friday | 2019-11-30 **Saturday** | 3 | 50.00 | 130.00 |
+| 123 | 2019-12-01 **Sunday** | 2019-12-05 Thursday | 6 | 120.00 | 180.00 |
+| 123 | 2019-12-06 Friday | 2019-12-12 Thursday | 3 | 100.00 | 300.00 |
 
 It always start on Friday and finishes on Thursday, except on the start/end of the Month. In the example the total sum of transactions is 400.00.
 
